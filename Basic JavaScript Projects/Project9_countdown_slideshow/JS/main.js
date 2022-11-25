@@ -1,20 +1,20 @@
-// sets an alarm based on input from the user
+// sets an alarm based on input from the user, then desiplays an alert after the number of seconds is up
 
-// function countdown() {
-//    var seconds = document.getElementById("seconds").ariaValueMax;
+function countdown() {
+  var seconds = document.getElementById("seconds").value;
 
-//    function tick() {
-//        seconds = seconds - 1;
-//        timer.innerHTML = seconds;
-//        var time = setTimeout(tick, 1000);
-//        if (seconds == -1) {
-//            alert("Time's up!");
-//            clearTimeout(time);
-//            timer.innerHTML = "";
-//        }
-//    }
-//    tick();
-//}
+    function tick(name) {
+        seconds = seconds - 1;
+        timer.innerHTML = seconds;
+        var time = setTimeout(tick, 1000);
+        if (seconds == -1) {
+            alert("Time's up!");
+            clearTimeout(time);
+            timer.innerHTML = "";
+        }
+    }
+    tick();
+}
 
 // ----------------------------------------------------------
 // ----------------------------------------------------------
@@ -24,15 +24,15 @@
 let slideIndex = 1;
 showSlides(slideIndex);
 
-function plusSlides(n) {
+function plusSlides(n) { // controls how the slideshow moves to the next slide
   showSlides(slideIndex += n);
 }
 
-function currentSlide(n) {
+function currentSlide(n) { // how the current slide shows 
   showSlides(slideIndex = n);
 }
 
-function showSlides(n) {
+function showSlides(n) { // moving through the slide show based on user controls
   let i;
   let slides = document.getElementsByClassName("mySlides");
   let dots = document.getElementsByClassName("dot");
