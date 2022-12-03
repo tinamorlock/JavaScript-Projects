@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>The Arrow Function</title>
+    </head>
+    <body>
+        <p id="print-result"></p>
+
+        <!-- simple function that prints a string on the web page -->
+
+        <script>
+            let printSentence = "";
+            printSentence = () => {
+                return "This is a sentence printed with the arrow function.";
+            }
+            document.getElementById("print-result").innerHTML = printSentence();
+        </script>
+    </body>
+</html>
