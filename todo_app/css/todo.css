@@ -1,0 +1,90 @@
+/**** footer styles *****/
+
+footer {
+    background-color: black;
+    color: white;
+    border-radius: 2px;
+    text-align: center;
+    padding: 2px;
+    position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+}
+
+a {
+    color: lightgrey;
+}
+
+html {
+    font-family: 'Avenir Next', Helvetica, sans-serif;
+    text-align: center;
+}
+
+body {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+input {
+    padding-top: 30px;
+    width: 500px;
+    height: 60px;
+    font-size: 40px;
+    border: 2px solid black;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    background-color: deepskyblue;
+}
+
+#toDoContainer {
+    width: 600px;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin-top: 50px;
+}
+
+input:hover,
+input:focus {
+    background-color: black;
+    border: 2px solid deepskyblue;
+    caret-color: deepskyblue;
+    color: deepskyblue;
+}
+hr {
+    height: 5px;
+    background-color: deepskyblue;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 0;
+}
+li {
+    text-align: left;
+    font-size: 40px;
+    list-style: none;
+    margin: 0;
+}
+
+button {
+    background-color: black;
+    border: 0;
+    padding: 5px;
+    color: deepskyblue;
+    cursor: pointer;
+    font-size: 36px;
+}
+
+.remove {
+    margin-left: 15px;
+    padding-top: .5px;
+}
+
+h1 {
+    border: 15px solid deepskyblue;
+    border-radius: 5px;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: deepskyblue;
+}
